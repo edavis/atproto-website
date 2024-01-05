@@ -110,12 +110,12 @@ Public keys in DID documents under `verificationMethod`, including atproto signi
 
 The `publicKeyMultibase` format for `Multikey` is the same encoding scheme as used with `did:key`, but without the `did:key:` prefix. See [Cryptography](/specs/cryptography) for details.
 
-Note that there is not yet a formal W3C standard for using P-256 public keys in DID `verificationMethod` sections, but that the `Multikey` standard does clarify what the encoding encoding should be for this key type.
+Note that there is not yet a formal W3C standard for using P-256 public keys in DID `verificationMethod` sections, but that the `Multikey` standard does clarify what the encoding should be for this key type.
 
 
 ### Legacy Representation
 
-Some older DID documents, which may still appear in `did:web` docs, had slightly different key encodings and `verificationMethod` syntax. Implementations may support these older DID documents during a transition period, but the intentent is to require DID specification compliance going forward.
+Some older DID documents, which may still appear in `did:web` docs, had slightly different key encodings and `verificationMethod` syntax. Implementations may support these older DID documents during a transition period, but the intent is to require DID specification compliance going forward.
 
 The older `verificationMethod` for atproto signing keys contained:
 
